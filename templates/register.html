@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Регистрация пользователя</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+<div class = "col-4">
+<h1>Регистрация пользователя</h1>
+
+<form method="POST"   class="form-contact">
+<p><label>Имя:  </label><input type="text" class = "form-control" name="name" required></p>
+<p><label>Возраст:  </label><input type="text" class = "form-control" name="old" value="" required></p>
+<p><label>Город:  </label><input type="text" class = "form-control" name="city" value="" required></p>
+<p><label>Email:  </label><input type="text" class = "form-control" name="email" value="" required></p>
+<p><label>Пароль:  </label><input type="password" name="psw" value="" required></p>
+<p><label>Повтор пароля:  </label><input type="password" name="psw2" value="" required></p>
+<p><input type="submit" class = "btn btn-outline-primary" value="Регистрация"></p>
+</form>
+
+</div>
+</div>
+
+{% endblock %}
