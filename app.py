@@ -15,7 +15,7 @@ class Item(db.Model):
     price = db.Column(db.Integer, nullable=False)
     isActive = db.Column(db.Boolean, default=True)
 
-    # text = db.Column(db.Text, nullable=False)
+    # text = db.Column(db.Text, nullable=False)cd
 
     def __repr__(self):
         return self.title
